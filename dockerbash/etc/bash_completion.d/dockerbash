@@ -5,7 +5,6 @@ function _dockerbash(){
 	case $com in
 		'dockerbash')
 			local containers=$(docker ps -a -f "status=running" --format "table{{.Names}}"|awk 'NR>1{print}')
-			compopt -o nospace
 			COMPREPLY=($(compgen -W '${containers[@]}' -- $cur)) ;;
 		*)
 			;;
