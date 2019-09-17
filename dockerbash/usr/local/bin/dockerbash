@@ -1,0 +1,7 @@
+#!/bin/bash
+if [[ -z $1 ]]; then
+	echo 请先输入容器名称 eg： dockerm example
+	exit -1
+fi
+
+docker exec -it -e LINES=`tput lines` -e COLUMNS=`tput cols`  $1 bash
