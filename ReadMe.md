@@ -1,8 +1,8 @@
-# myShell
+# miaome
 
 ## ./dockersearch docker私有库查询镜像脚本
 
-* 自动搜索Linux目录/etc/docker/daemon.json中的私有库(insecure-registry)地址，进行dockersearch补全
+* 自动搜索Linux目录/etc/docker/daemon.json中的私有库(insecure-registries)地址，进行dockersearch补全
 
 * 在地址后追加镜像名称，搜索包含输入名称的镜像及其版本
 
