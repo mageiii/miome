@@ -1,4 +1,4 @@
-# miaome
+# miome
 
 ## ./dockersearch docker私有库查询镜像脚本
 
