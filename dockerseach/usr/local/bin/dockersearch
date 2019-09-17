@@ -6,7 +6,11 @@ import json
 import sys
 
 DOCKER_REGISTRY_VERSION = 'v2'
-ipAddressInput = sys.argv[1]  # 搜索输入地址名称 eg: 10.0.0.0:5000/ ; 10.0.0.0:5000/redis
+try:
+    ipAddressInput = sys.argv[1]  # 搜索输入地址名称 eg: 10.0.0.0:5000/ ; 10.0.0.0:5000/redis
+except IndexError:
+    print "eg: dockersearch 10.0.0.0:5000/\r\n    dockersearch 10.0.0.0:5000/redis"
+    exit()
 name_tag_space_num = 30  # 打印间隔空格个数
 username = ''  # 用户名
 passwd = ''  # 密码
