@@ -1,9 +1,12 @@
-# 进入容器命令行dockerbash脚本使用方法
+# dockerbash脚本使用方法
 
-> 前提：将要进入的容器内包含/bin/bash解释器
+> 前提：系统安装有bash-completion
+
+> 将要进入的容器内包含/bin/bash解释器
 
 
+1. 在当前项目目录中执行make clean && make all，然后直接执行在release目录中的文件"./dockerbashXXX.install"
 
-1.按当前目录拷贝文件至Linux系统中。
+2. 重新打开命令行。
 
-2.在shell中输入dockerbash命令,双击tab键即可展示运行中容器名称，单击tab键自动补全输入名称。
+3. 在shell中输入dockerbash命令,双击tab键即可展示运行中容器名称，单击tab键自动补全输入名称。
